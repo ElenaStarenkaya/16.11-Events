@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 2000px;
+        }
+
+        div {
+            background-color: navy;
+            height: 255px;
+            width: 255px;
+        }
+    </style>
+</head>
+
+<body id="myBody">
+    <!-- <div id="colorBlock"></div> -->
+    <div id="sizingBlock"></div>
+    <script>
+        // colorBlock.addEventListener("click", function () {
+        //     colorBlock.style.backgroundColor = "rgb(" + Math.round(Math.random() * 255) + "," + Math.round(Math.random() * 255) + "," + Math.round(Math.random() * 255) + ")";
+        // });
+
+        // colorBlock.addEventListener("mousemove", function (e) {
+        //     colorBlock.style.backgroundColor = "rgb(" + 127 + "," + e.pageX + "," + e.pageY + ")";
+        // });
+
+        
+        myBody.addEventListener("mousemove", function (e) {
+            sizingBlock.style.width = e.pageX;
+            sizingBlock.style.height = e.pageY;
+        });
+    </script>
+
+</body>
+
+</html>
